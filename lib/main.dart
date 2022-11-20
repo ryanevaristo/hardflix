@@ -53,11 +53,6 @@ class _MyHomePageState extends State<MyHomePage> {
   final passwordController = TextEditingController();
 
   @override
-  void dispose () {
-    emailController.dispose();
-    passwordController.dispose();
-    super.dispose();
-  }
   Widget build(BuildContext context) {
     return Scaffold(
         body: ListView(

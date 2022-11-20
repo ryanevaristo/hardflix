@@ -103,7 +103,9 @@ class _MoviesState extends State<Movies> {
                     },
                     child: tasks[index].image.isEmpty
                         ? Image.network("https://i.stack.imgur.com/l60Hf.png")
-                        : Image.network(tasks[index].image),
+                        :  Image.network(
+                  tasks[index].image,
+                ),
                   ),
                 ),
               );
